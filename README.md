@@ -25,11 +25,11 @@ i.e., (df = pd.read_csv('spam.csv',encoding = "ISO-8859-1")
 - Using the libraries of wordcloud, we can plot the top words appearing in any of the labels (spam or ham)
 - 
 **4. Text Pre-Processing:**
-    **- Lower case**: converted the text data to lower case.[ text = text.lower(text) ]
-    **- Tokenization**: it separates the all the words in a sentence. [text = nltk.word_tokenize(text) ]
-    **- Removing special Characters**: using .isalnum() function, got rid of all the special characters (like %%$*#$@!.......)
-    **- Removing stop words and punctuation**: stopwords like is,am,are,you,,etc eliminated from the dataset.
-    **- Stemming**: this removes the different verb forms of a word, and give the root word.
+    - Lower case: converted the text data to lower case.[ text = text.lower(text) ]
+    - Tokenization: it separates the all the words in a sentence. [text = nltk.word_tokenize(text) ]
+    - Removing special Characters: using .isalnum() function, got rid of all the special characters (like %%$*#$@!.......)
+    - Removing stop words and punctuation: stopwords like is,am,are,you,,etc eliminated from the dataset.
+    - Stemming: this removes the different verb forms of a word, and give the root word.
 
 **5. Model Building**
 - Used CountVectorizer() and TfidfVectorizer() to get the vector form of the dataset.
