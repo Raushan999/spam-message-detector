@@ -4,14 +4,16 @@ Link to the webpage: https://spam-message-detector.herokuapp.com/
 :: Following are the steps into which the project can be divided ::
 
 **About the dataset:**
-The dataset contained information about the different messages being spam or ham.
-Since the data had characters from various languages and character set, we had use encoding: "ISO-8859-1" to load the file.
-i.e., (df = pd.read_csv('spam.csv',encoding = "ISO-8859-1")
+
+    The dataset contained information about the different messages being spam or ham.
+    Since the data had characters from various languages and character set, we had use encoding: "ISO-8859-1" to load the file.
+    i.e., (df = pd.read_csv('spam.csv',encoding = "ISO-8859-1")
 
 **1. Data Cleaning**
-- Dataset has 5 columns, of which last 3 had null values mostly, so I decided to drop them.
-- Dropped the duplicates rows while keeping the first occurance: dataset = dataset.drop_duplicates(keep = 'first')
-- Used LabelEncoder to provide labels to ham and spam messages.
+
+    - Dataset has 5 columns, of which last 3 had null values mostly, so I decided to drop them.
+    - Dropped the duplicates rows while keeping the first occurance: dataset = dataset.drop_duplicates(keep = 'first')
+    - Used LabelEncoder to provide labels to ham and spam messages.
  
 **2. EDA**
 
